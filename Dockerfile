@@ -51,7 +51,7 @@ EOF
 FROM alpine:latest AS ioquake3
 
 # Add non-root user
-RUN adduser --system ioq3
+RUN adduser --system --uid 1000 ioq3
 
 USER ioq3
 
